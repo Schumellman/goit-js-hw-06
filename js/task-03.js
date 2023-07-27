@@ -20,4 +20,3 @@ const createImages = images.map((img) => `
   <img class = "list-item-img" src=${img.url} alt=${img.alt}>
 </li>`).join("");
 listGalary.insertAdjacentHTML("beforeend", createImages);
-console.log(listGalary)
