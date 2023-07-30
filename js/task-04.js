@@ -8,15 +8,15 @@ const increase = document.querySelector('button[data-action="increment"]');
 
 
 
-increase.addEventListener('click', addIncrease);
-reduce.addEventListener('click', remReduce);
+increase.addEventListener('click', onAddIncrease);
+reduce.addEventListener('click', onRemReduce);
 
-function addIncrease() {
+function onAddIncrease() {
     counterValue += 1;
     span.textContent = counterValue;
 }
 
-function remReduce() {
+function onRemReduce() {
     if (counterValue !== 0) {
         counterValue -= 1;
         span.textContent = counterValue;
