@@ -16,10 +16,10 @@ elements.destroyButton.addEventListener('click', onDestroyButton);
 
 function onDestroyButton() {
   elements.box.innerHTML = '';
+  elements.input.value = 0;
 }
-function onCreateBox() {
+function onCreateBox(evt) {
   const value = Number(elements.input.value);
-
   function createBox(value) {
     let startWidth = 30;
     let startHigth = 30;

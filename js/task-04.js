@@ -17,8 +17,6 @@ function onAddIncrease() {
 }
 
 function onRemReduce() {
-    if (counterValue !== 0) {
-        counterValue -= 1;
-        span.textContent = counterValue;
-    }
+    counterValue -= 1;
+    span.textContent = counterValue;
 }

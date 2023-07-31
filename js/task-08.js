@@ -11,6 +11,7 @@ function onFormSubmitProces(event) {
     
     if (email.value === '' || password.value === '') {
         alert('All fields must be filled');
+        return;
     }
     const formData = {
         email: email.value,
