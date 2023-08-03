@@ -18,6 +18,7 @@ function onDestroyButton() {
   elements.box.innerHTML = '';
   elements.input.value = 0;
 }
+// add function
 function onCreateBox(evt) {
   const value = Number(elements.input.value);
   function createBox(value) {
